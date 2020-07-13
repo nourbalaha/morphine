@@ -1,0 +1,64 @@
+.app{
+  width: 100vw;
+  .app-header{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: #502F8E;
+  }
+  .main{
+    display: flex;
+    height: 90vh;
+    border-top: none;
+    .side-bar{
+      background-color: #E0E0E0;
+      flex:1;
+      .search-bar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10px;
+        .search-input{
+          flex:1;
+          margin-top: 10px;
+          margin-right: 5px;
+          margin-left: 5px;
+          padding: 10px;
+          border: none;
+          border-radius: 5px;
+        }
+      }
+      .word-list{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        height: 80vh;
+        overflow-x:auto;
+        .word{
+          padding: 10px;
+          margin-left: 15px;
+          cursor: pointer;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .result-page{
+      padding: 30px;
+      background-color: #EFEFEF;
+      flex: 5;
+      h3{
+        font-size: 24px;
+        color: #5F2F6F;
+        margin-left: 10px;
+      }
+      p{
+        font-size: 18px;
+        margin-left: 20px;
+      }
+    }
+  }
+}
